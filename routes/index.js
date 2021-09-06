@@ -23,15 +23,13 @@ router.get("/new", function (req, res, next) {
   res.render("new", { title: "New Message" });
 });
 
-router.post("/new", function (req, res) {
-  messages.push(
-    {
-      text: req.body.message,
-      user: req.body.author,
-      added: new Date(),
-    },
-    res.redirect("/")
-  );
+router.post("/new", (req, res) => {
+  messages.push({
+    name: req.body.name,
+    text: req.body.text,
+    added: new Date(),
+  });
+  res.redirect("/");
 });
 
 module.exports = router;

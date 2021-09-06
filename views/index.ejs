@@ -1,3 +1,15 @@
-<%- entries = entries.map(function(elem) {
-    return '<a href="/">' + elem.text + '</a>'
-}) %>
+<link rel="stylesheet" href="/stylesheets/style.css" />
+
+<h1>Message Board</h1>
+<div class="messages">
+  <% messages.forEach((value,index)=>{ %>
+  <ul>
+    <li>Name: <%= value.name%></li>
+    <li>Text: <%= value.text%></li>
+    <li>Added: <%=value.added%></li>
+  </ul>
+  <%}) %>
+</div>
+<div>
+  <a href="/new">New Message</a>
+</div>
