@@ -1,15 +1,26 @@
-<link rel="stylesheet" href="/stylesheets/style.css" />
-
-<h1>Message Board</h1>
-<div class="messages">
-  <% messages.forEach((value,index)=>{ %>
-  <ul>
-    <li>Name: <%= value.name%></li>
-    <li>Text: <%= value.text%></li>
-    <li>Added: <%=value.added%></li>
-  </ul>
-  <%}) %>
-</div>
-<div>
-  <a href="/new">New Message</a>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Message Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/email.ico" />
+  </head>
+  <body>
+    <section class="messageBoard">
+      <h1>Message Board</h1>
+      <div>
+        <% messages.forEach((value,index)=>{ %>
+        <ul class="messages">
+          <li><strong>Name: </strong> <%= value.name%></li>
+          <li><strong>Text: </strong> <%= value.text%></li>
+          <li><strong>Added: </strong> <%=value.added%></li>
+        </ul>
+        <%}) %>
+      </div>
+      <a href="/new" class="button">New Message</a>
+    </section>
+  </body>
+</html>

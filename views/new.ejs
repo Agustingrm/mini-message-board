@@ -1,8 +1,24 @@
-<link rel="stylesheet" href="/stylesheets/style.css" />
-
-<form method="POST" action="/new">
-  <input type="text" name="name" placeholder="Name" />
-  <input type="text" name="text" placeholder="Insert your message here" />
-  <input type="submit" value="Submit" />
-</form>
-<a href="/">Go back</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>New Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/email.ico" />
+  </head>
+  <body>
+    <section class="newSection">
+      <h1>New Message</h1>
+      <form method="POST" action="/new">
+        <input type="text" name="name" placeholder="Name" />
+        <textarea type="text" name="text" placeholder="Insert your message here"></textarea>
+        <div class="buttonConfiguration">
+          <input type="submit" value="Submit" class="button" />
+          <a href="/" class="button">Go back</a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

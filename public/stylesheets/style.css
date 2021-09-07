@@ -1,11 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap");
+.newSection {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #a8a8a8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: auto;
+}
+
+input[name=name] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+textarea[name=text] {
+  padding: 5px;
+  height: 80px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  font-family: "Urbanist", sans-serif;
+}
+
+::placeholder {
+  font-family: "Urbanist", sans-serif;
+}
+
+.buttonConfiguration {
+  display: flex;
+  font-family: "Urbanist", sans-serif;
+}
+
 body {
-  background: url(../../images/pattern.png);
-  background-repeat: repeat;
-  background-color: red;
+  background-color: #78A2CC;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+}
+
+.messageBoard {
+  background-color: white;
+  margin: 30px auto;
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #a8a8a8;
+  padding: 20px;
 }
 
 h1 {
-  color: pink;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.messages {
+  border: solid 1px #838383;
+  width: 80%;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.button:visited {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

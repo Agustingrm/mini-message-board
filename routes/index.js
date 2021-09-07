@@ -4,12 +4,12 @@ var router = express.Router();
 const messages = [
   {
     text: "Hi there!",
-    user: "Amando",
+    name: "Amando",
     added: new Date(),
   },
   {
     text: "Hello World!",
-    user: "Charles",
+    name: "Charles",
     added: new Date(),
   },
 ];
